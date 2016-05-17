@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JS_1_2</title>
+    </head>
+    <body>
+    <script type="text/javascript">
+    var arr = []; //создание пустого массива
+
+    for (var i = 0; i < 5; i++) {
+        arr.push(prompt('Add Login No. ' + (i+1)));
+    } //заполнение массива логинов
+
+    var userName = prompt('Enter your Login'); //введение имени
+
+    var rightName = false; //запрет всех логинов
+
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] == userName) {
+            rightName = true;
+            alert('Welcome, ' + userName + '! Nice to see you, bunny ;)');
+            break;
+        }
+    } //условия входа по правильному логину
+
+    if (!rightName) {
+        alert('Ooops.. Login is uncorrect! Try again..');
+    } //отмена входа по неправильному логину
+
+    </script>
+    </body>
+</html>
