@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery_template</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+<script type="text/template" id="test">
+    <% for (var i=0; i < data.length; i++) { %>
+    <h1><%= data[i].title %></h1>
+    <p><%= data[i].content %></p>
+    <%= }; %>
+</script>
+
+</body>
+</html>
