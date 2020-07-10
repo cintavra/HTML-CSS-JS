@@ -1,2 +1,1 @@
-# cintavra.github.io
-HTML, CSS & JS homeworks
+#HTML, CSS & JS homeworks
